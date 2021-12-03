@@ -8,14 +8,20 @@ surface = pygame.display.set_mode((1200, 1200))
 
 
 # Display of the levels difficulties options
-def start_the_game():
+def start_the_game(Name):
+    player_input = f"Quelle est ton nom : f'{input(Name)}"
+    Name = player_input
     pass
 
 
 def set_difficulty():
-    'Easy' == 1 == board.board_easy()
-    'Medium' == 2 == board.board_medium()
-    'Hard' == 3 == board.board_hard()
+    if ('Easy' == 1):
+        board.board_easy()
+    if ('Medium' == 2):
+        board.board_medium()
+    if ('Hard' == 3):
+        board.board_hard()
+
 
 
 def board_score():
